@@ -9,7 +9,7 @@ const Component1 = ({ count, setCount }) => {
       <button onClick={() => setCount((c) => c + 1)}>
         Increment Count
       </button>
-      <AdditonalInfo />
+      <AdditionalInfo />
     </div>
   );
 };
@@ -24,7 +24,7 @@ const Parent = () => {
   );
 };
 
-const AdditonalInfo = () => {
+const AdditionalInfo = () => {
   return <p>Some information</p>
 };
 
@@ -55,10 +55,10 @@ const Parent = ({ additionalInfo }) => {
 };
 
 const GrandParent = () => {
-  return <Parent additionalInfo={<AdditonalInfo />} />;
+  return <Parent additionalInfo={<AdditionalInfo />} />;
 };
 
-const AdditonalInfo = () => {
+const AdditionalInfo = () => {
   return <p>Some information</p>
 };
 
@@ -89,7 +89,7 @@ const Parent = ({ children }) => {
 const GrandParent = () => {
   return (
     <Parent>
-      <AdditonalInfo />
+      <AdditionalInfo />
     </Parent>
   );
 };
