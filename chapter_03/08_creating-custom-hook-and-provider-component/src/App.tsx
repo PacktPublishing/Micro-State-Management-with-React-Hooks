@@ -1,7 +1,7 @@
 import {
-  FC,
   Dispatch,
   SetStateAction,
+  ReactNode,
   createContext,
   useContext,
   useState,
@@ -10,26 +10,26 @@ import {
 type CountContextType = [number, Dispatch<SetStateAction<number>>];
 
 const Count1Context = createContext<CountContextType | null>(null);
-export const Count1Provider: FC = ({ children }) => (
+export const Count1Provider = ({ children }: { children: ReactNode }) => (
   <Count1Context.Provider value={useState(0)}>
     {children}
   </Count1Context.Provider>
 );
 export const useCount1 = () => {
   const value = useContext(Count1Context);
-  if (value === null) throw new Error('Provider missing');
+  if (value === null) throw new Error("Provider missing");
   return value;
 };
 
 const Count2Context = createContext<CountContextType | null>(null);
-export const Count2Provider: FC = ({ children }) => (
+export const Count2Provider = ({ children }: { children: ReactNode }) => (
   <Count2Context.Provider value={useState(0)}>
     {children}
   </Count2Context.Provider>
 );
 export const useCount2 = () => {
   const value = useContext(Count2Context);
-  if (value === null) throw new Error('Provider missing');
+  if (value === null) throw new Error("Provider missing");
   return value;
 };
 

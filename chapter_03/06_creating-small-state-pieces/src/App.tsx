@@ -1,7 +1,7 @@
 import {
-  FC,
   Dispatch,
   SetStateAction,
+  ReactNode,
   createContext,
   useContext,
   useState,
@@ -41,7 +41,7 @@ const Parent = () => (
   </div>
 );
 
-const Count1Provider: FC = ({ children }) => {
+const Count1Provider = ({ children }: { children: ReactNode }) => {
   const [count1, setCount1] = useState(0);
   return (
     <Count1Context.Provider value={[count1, setCount1]}>
@@ -50,7 +50,7 @@ const Count1Provider: FC = ({ children }) => {
   );
 };
 
-const Count2Provider: FC = ({ children }) => {
+const Count2Provider = ({ children }: { children: ReactNode }) => {
   const [count2, setCount2] = useState(0);
   return (
     <Count2Context.Provider value={[count2, setCount2]}>

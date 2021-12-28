@@ -1,4 +1,10 @@
-import { FC, Dispatch, createContext, useContext, useReducer } from "react";
+import {
+  Dispatch,
+  ReactNode,
+  createContext,
+  useContext,
+  useReducer,
+} from "react";
 
 type Action = { type: "INC1" } | { type: "INC2" };
 
@@ -37,7 +43,7 @@ const Parent = () => (
   </div>
 );
 
-const Provider: FC = ({ children }) => {
+const Provider = ({ children }: { children: ReactNode }) => {
   const [state, dispatch] = useReducer(
     (prev: { count1: number; count2: number }, action: Action) => {
       if (action.type === "INC1") {
