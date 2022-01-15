@@ -1,10 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-export interface CounterState {
-  value: number;
-}
-
-const initialState: CounterState = {
+const initialState = {
   value: 0,
 };
 
