@@ -4,7 +4,7 @@
 
 This is the code repository for [Micro State Management with React Hooks](https://www.packtpub.com/product/micro-state-management-with-react-hooks/9781801812375), published by Packt.
 
-**A guide to exploring various patterns and custom hooks libraries to manage global states**
+**Explore custom hooks libraries like Zustand, Jotai, and Valtio to manage global states**
 
 ## What is this book about?
 State management is one of the most complex concepts in React. Traditionally, developers have used monolithic state management solutions. Thanks to React Hooks, micro state management is something tuned for moving your application from a monolith to a microservice.
