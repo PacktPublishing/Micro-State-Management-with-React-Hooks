@@ -58,6 +58,9 @@ With the following software and hardware list you can run all code files present
 * Simplify Testing with React Testing Library [[Packt]](https://www.packtpub.com/product/simplify-testing-with-react-testing-library/9781800564459) [[Amazon]](https://www.amazon.com/dp/1800564457)
 
 * Designing React Hooks the Right Way [[Packt]](https://www.packtpub.com/product/designing-react-hooks-the-right-way/9781803235950) [[Amazon]](https://www.amazon.com/dp/1803235950)
+  
+## Errata  
+ * Page 151 (code snippet 3 ,line 1):  **const Counter = ({ countAtom }) => {** _should be_ **const Counter = () => {**
 
 ## Get to Know the Author
 **Daishi Kato**
