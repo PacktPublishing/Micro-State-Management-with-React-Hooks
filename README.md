@@ -62,8 +62,8 @@ With the following software and hardware list you can run all code files present
 ## Errata  
  * Page 151 (code snippet 3 ,line 1):  **const Counter = ({ countAtom }) => {** _should be_ **const Counter = () => {**
  * Page 59 (Paragraph 3, line 2): **This is because Contexts hold only primitive values.** Should be ignored and removed which is wrong explanation of the code.
- * Page 37 (code snippet 3, line 13): **console.log(container1.addBase(2)); // shows "3"** Should **console.log(container1.addBase(2)); // shows "12"**.
- * Page 37 (code snippet 3, line 14): **console.log(container1.addBase(2)); // shows "12"** Should **console.log(container1.addBase(2)); // shows "3"**.
+ * Page 37 (code snippet 3, line 13): **console.log(container1.addBase(2)); // shows "3"** Should be **console.log(container1.addBase(2)); // shows "12"**.
+ * Page 37 (code snippet 3, line 14): **console.log(container1.addBase(2)); // shows "12"** Should be **console.log(container1.addBase(2)); // shows "3"**.
 
 ## Get to Know the Author
 **Daishi Kato**
