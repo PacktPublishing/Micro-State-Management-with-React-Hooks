@@ -10,8 +10,8 @@ const container2 = createContainer();
 
 container1.changeBase(10);
 
-console.log(container1.addBase(2)); // shows "3"
-console.log(container2.addBase(2)); // shows "12"
+console.log(container1.addBase(2)); // shows "12"
+console.log(container2.addBase(2)); // shows "3"
 
 const Component1 = ({ count, setCount }) => {
   return (
