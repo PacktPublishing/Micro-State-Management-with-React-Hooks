@@ -1,6 +1,6 @@
 const init = (count) => ({ count })
 
-const reducer = (prev, delta) => prev + delta
+const reducer = (prev, delta) => ({ ...prev, count: prev.count + delta })
 
 const ComponentWithUseReducer = ({ initialCount }) => {
   const [state, dispatch] = useReducer(
@@ -10,7 +10,7 @@ const ComponentWithUseReducer = ({ initialCount }) => {
   );
   return (
     <div>
-      {state}
+      {state.count}
       <button onClick={() => dispatch(1)}>+1</button>
     </div>
   );
