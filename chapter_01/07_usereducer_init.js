@@ -20,5 +20,10 @@ const ComponentWithUseState = ({ initialCount }) => {
   const [state, setState] = useState(() => init(initialCount));
   const dispatch = (delta) =>
     setState((prev) => reducer(prev, delta));
-  return [state, dispatch];
+  return (
+    <div>
+      {state}
+      <button onClick={() => dispatch(1)}>+1</button>
+    </div>
+  );
 };
