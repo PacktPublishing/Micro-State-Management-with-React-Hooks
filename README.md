@@ -75,6 +75,8 @@ With the following software and hardware list you can run all code files present
     </div>
   );
   ```
+ * Page 22 (code snippet 2, line 2): **const reducer = (prev, delta) => prev + delta** Should be **const reducer = (prev, delta) => ({ ...prev, count: prev.count + delta })**
+ * Page 23 (code snippet 1, line 3): **{state}** Should be **{state.count}**
   
 
 ## Get to Know the Author
