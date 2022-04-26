@@ -78,7 +78,7 @@ With the following software and hardware list you can run all code files present
  * Page 22 (code snippet 2, line 2): **const reducer = (prev, delta) => prev + delta** Should be **const reducer = (prev, delta) => ({ ...prev, count: prev.count + delta })**
  * Page 23 (code snippet 1, line 3): **{state}** Should be **{state.count}**
  * Page 163 (code snippet 2 ,line 3):  **const incrementCountAtom(** Should be **const incrementCountAtom = atom(**
- * Page 20 (Paragraph 1, line 2): **takes a second argument.** should be **takes an argument**. 
+ * Page 20 (Paragraph 1, line 2): **takes a second argument---`initialArg`--in useReducer** should be **takes an argument---`initialArg`--, which is the second argument from useReducer**. 
 
 ## Get to Know the Author
 **Daishi Kato**
