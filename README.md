@@ -66,7 +66,7 @@ With the following software and hardware list you can run all code files present
  * Page 37 (code snippet 3, line 14): **console.log(container1.addBase(2)); // shows "12"** Should be **console.log(container1.addBase(2)); // shows "3"**.
  * Page 14 (code snippet 1, line 3): **onClick={() => { state.count = 1; setState(state); }** Should be **onClick={() => { state.count = 1; setState(state); }}**.
  * Page 21 (code snippet 2, line 2): **typeof action === 'function' ? action(prev): prev;** Should be **typeof action === 'function' ? action(prev): action;**.
- * Page 21 (code snippet 1, line 7): **return [state, dispatch];** Should be 
+ * Page 23 (code snippet 1, line 14): **return [state, dispatch];** Should be 
   ```
   return (
     <div>
@@ -77,6 +77,7 @@ With the following software and hardware list you can run all code files present
   ```
  * Page 22 (code snippet 2, line 2): **const reducer = (prev, delta) => prev + delta** Should be **const reducer = (prev, delta) => ({ ...prev, count: prev.count + delta })**
  * Page 23 (code snippet 1, line 3): **{state}** Should be **{state.count}**
+ * Page 163 (code snippet 2 ,line 3):  **const incrementCountAtom(** Should be **const incrementCountAtom = atom(**
  * Page 20 (Paragraph 1, line 2): **takes a second argument.** should be **takes an argument**. 
 
 ## Get to Know the Author
