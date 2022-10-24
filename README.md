@@ -83,3 +83,7 @@ With the following software and hardware list you can run all code files present
 ## Get to Know the Author
 **Daishi Kato**
 is a software engineer who is passionate about open-source software. He had been a researcher on peer-to-peer networks and web technologies for decades. His interest has been in engineering, and he has been working with startups for the last 5 years. He has been actively involved in OSS since the ’90s, and his latest work focuses on developing various libraries with JavaScript and React.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781801812375">https://packt.link/free-ebook/9781801812375 </a> </p>
